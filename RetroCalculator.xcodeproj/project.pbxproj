@@ -58,16 +58,24 @@
 		34CFECF91E729B040048B949 /* RetroCalculator */ = {
 			isa = PBXGroup;
 			children = (
-				34CFECFA1E729B040048B949 /* AppDelegate.swift */,
-				34CFED0E1E72A50F0048B949 /* btn.wav */,
+				34EFB2CD1E7D0A76008B8B61 /* SupportingFiles */,
 				34CFECFC1E729B040048B949 /* ViewController.swift */,
 				34CFECFE1E729B040048B949 /* Main.storyboard */,
+			);
+			path = RetroCalculator;
+			sourceTree = "<group>";
+		};
+		34EFB2CD1E7D0A76008B8B61 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				34CFED0E1E72A50F0048B949 /* btn.wav */,
 				34CFED011E729B040048B949 /* Assets.xcassets */,
 				34CFED031E729B040048B949 /* LaunchScreen.storyboard */,
+				34CFECFA1E729B040048B949 /* AppDelegate.swift */,
 				34CFED0C1E72A43A0048B949 /* Minecrafter.Alt.ttf */,
 				34CFED061E729B040048B949 /* Info.plist */,
 			);
-			path = RetroCalculator;
+			name = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,6 +315,7 @@
 				34CFED0B1E729B040048B949 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
