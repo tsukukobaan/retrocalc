@@ -69,7 +69,7 @@
                                                 </constraints>
                                                 <state key="normal" image="7"/>
                                                 <connections>
-                                                    <action selector="touchDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gnS-Ot-XTR"/>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r8x-7Y-YPh"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zLv-lU-v8B">
@@ -79,6 +79,9 @@
                                                     <constraint firstAttribute="width" constant="73" id="BAp-O7-f4W"/>
                                                 </constraints>
                                                 <state key="normal" image="8"/>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fCi-2n-DAt"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nrr-kb-kxi">
                                                 <rect key="frame" x="166" y="0.0" width="73.000000000000028" height="75"/>
@@ -87,6 +90,9 @@
                                                     <constraint firstAttribute="width" constant="73" id="RxJ-AG-f3d"/>
                                                 </constraints>
                                                 <state key="normal" image="9"/>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="urp-WT-ilE"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -100,6 +106,9 @@
                                                     <constraint firstAttribute="height" constant="75" id="x8B-sa-z4B"/>
                                                 </constraints>
                                                 <state key="normal" image="4"/>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vi4-vC-wzh"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9f-AA-nbQ">
                                                 <rect key="frame" x="82.999999999999986" y="0.0" width="73.000000000000014" height="75.000000000000028"/>
@@ -108,6 +117,9 @@
                                                     <constraint firstAttribute="height" constant="75" id="NxS-e7-d5q"/>
                                                 </constraints>
                                                 <state key="normal" image="5"/>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kac-av-rUX"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FO2-DE-bU6">
                                                 <rect key="frame" x="166" y="0.0" width="73.000000000000028" height="75.000000000000028"/>
@@ -116,6 +128,9 @@
                                                     <constraint firstAttribute="width" constant="73" id="rkg-LC-wqO"/>
                                                 </constraints>
                                                 <state key="normal" image="6"/>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uow-0c-KyU"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -129,6 +144,9 @@
                                                     <constraint firstAttribute="width" constant="73" id="sPx-KY-QjB"/>
                                                 </constraints>
                                                 <state key="normal" image="1"/>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4qx-wm-jBc"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="90O-q6-370">
                                                 <rect key="frame" x="82.999999999999986" y="0.0" width="73.000000000000014" height="75"/>
@@ -137,6 +155,9 @@
                                                     <constraint firstAttribute="width" constant="73" id="wqH-n4-gIs"/>
                                                 </constraints>
                                                 <state key="normal" image="2"/>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cei-rg-D0y"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="931-d2-XuG">
                                                 <rect key="frame" x="166" y="0.0" width="73.000000000000028" height="75"/>
@@ -145,6 +166,9 @@
                                                     <constraint firstAttribute="height" constant="75" id="cQT-Er-5NM"/>
                                                 </constraints>
                                                 <state key="normal" image="3"/>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p0F-Hl-RSp"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -158,51 +182,69 @@
                                                     <constraint firstAttribute="height" constant="75" id="9JW-IE-USw"/>
                                                 </constraints>
                                                 <state key="normal" image="0"/>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qHQ-sD-xm9"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UPu-5O-0By">
+                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UPu-5O-0By">
                                                 <rect key="frame" x="82.999999999999986" y="0.0" width="73.000000000000014" height="75"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="73" id="N8b-6k-FVx"/>
                                                     <constraint firstAttribute="height" constant="75" id="Nvx-OK-a9v"/>
                                                 </constraints>
                                                 <state key="normal" image="divide"/>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HR3-Jw-w0N"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhr-ff-sXu">
+                                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhr-ff-sXu">
                                                 <rect key="frame" x="166" y="0.0" width="73.000000000000028" height="75"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="73" id="Lr9-4P-UBp"/>
                                                     <constraint firstAttribute="height" constant="75" id="U7L-Sr-1Sk"/>
                                                 </constraints>
                                                 <state key="normal" image="multiply"/>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hao-ok-JOc"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="GXi-qg-mUj">
                                         <rect key="frame" x="0.0" y="344" width="239" height="74.999999999999943"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BRK-di-19a">
+                                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BRK-di-19a">
                                                 <rect key="frame" x="0.0" y="0.0" width="72.999999999999986" height="74.999999999999943"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="75" id="Gnw-sf-fVL"/>
                                                     <constraint firstAttribute="width" constant="73" id="mTb-9d-L8Q"/>
                                                 </constraints>
                                                 <state key="normal" image="subtract"/>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pWa-Ho-fpw"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hf8-xT-hlH">
+                                            <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hf8-xT-hlH">
                                                 <rect key="frame" x="82.999999999999986" y="0.0" width="73.000000000000014" height="74.999999999999943"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="75" id="J5x-la-Msy"/>
                                                     <constraint firstAttribute="width" constant="73" id="Kld-nT-vhV"/>
                                                 </constraints>
                                                 <state key="normal" image="add"/>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Hr-Db-c3W"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FXV-U6-8xW">
+                                            <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FXV-U6-8xW">
                                                 <rect key="frame" x="166" y="0.0" width="73.000000000000028" height="74.999999999999943"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="73" id="CH5-PK-NA4"/>
                                                     <constraint firstAttribute="height" constant="75" id="qx6-3J-Fr2"/>
                                                 </constraints>
                                                 <state key="normal" image="equal"/>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G6j-oi-TRy"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -234,7 +276,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="outputLbl" destination="3T7-xx-jzm" id="DAv-Gj-vaM"/>
+                        <outlet property="display" destination="3T7-xx-jzm" id="DaB-Dd-E2y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

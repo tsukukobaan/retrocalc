@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		342F04CF1E7EA20F002607E4 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342F04CE1E7EA20F002607E4 /* CalculatorBrain.swift */; };
 		34CFECFB1E729B040048B949 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CFECFA1E729B040048B949 /* AppDelegate.swift */; };
 		34CFECFD1E729B040048B949 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CFECFC1E729B040048B949 /* ViewController.swift */; };
 		34CFED001E729B040048B949 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34CFECFE1E729B040048B949 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		342F04CE1E7EA20F002607E4 /* CalculatorBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
 		34CFECF71E729B040048B949 /* RetroCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetroCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34CFECFA1E729B040048B949 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34CFECFC1E729B040048B949 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				34EFB2CD1E7D0A76008B8B61 /* SupportingFiles */,
 				34CFECFC1E729B040048B949 /* ViewController.swift */,
 				34CFECFE1E729B040048B949 /* Main.storyboard */,
+				342F04CE1E7EA20F002607E4 /* CalculatorBrain.swift */,
 			);
 			path = RetroCalculator;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				342F04CF1E7EA20F002607E4 /* CalculatorBrain.swift in Sources */,
 				34CFECFD1E729B040048B949 /* ViewController.swift in Sources */,
 				34CFECFB1E729B040048B949 /* AppDelegate.swift in Sources */,
 			);

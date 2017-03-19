@@ -11,7 +11,19 @@ import AVFoundation
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var display: UILabel!
     var btnSound: AVAudioPlayer!
+    private var userIsInMiddleOfTyping = false
+    private var brain = CalculatorBrain()
+    
+    private var displayValue : Double {
+        get {
+            return Double(display.text!)!
+        }
+        set {
+            display.text = String(newValue)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,8 +50,43 @@ class ViewController: UIViewController {
         btnSound.play()
     }
     
-    @IBAction func touchDigit(_ sender: Any) {
+    @IBAction private func touchButton(_ sender: AnyObject) {
+        guard let button = sender as? UIButton else {
+            return
+        }
+        
+        let digit = button.tag
+        
+        if digit <= 10 {
+            touchDigit(digit)
+        } else if digit > 10 {
+            performOperation(button)
+        }
+        
     }
     
+    func touchDigit(_ digit: Int) {
+        if userIsInMiddleOfTyping {
+            let textCurrenlyInDisplay = display.text!
+            display.text = textCurrenlyInDisplay + "\(digit)"
+            
+        } else {
+            display.text = "\(digit)"
+        }
+        userIsInMiddleOfTyping = true
+    }
+    
+    func performOperation(_ digit: AnyObject) {
+        
+        if userIsInMiddleOfTyping {
+            brain.setOperand(operand: displayValue)
+            userIsInMiddleOfTyping = false
+        }
+        //let mathematicalSymbol = digit
+        
+        
+    }
+    
+
 
 }
