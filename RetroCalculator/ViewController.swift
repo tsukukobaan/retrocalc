@@ -60,12 +60,15 @@ class ViewController: UIViewController {
         if digit <= 10 {
             touchDigit(digit)
         } else if digit > 10 {
-            performOperation(button)
+            performOperation(digit)
         }
+        
+        playSound()
         
     }
     
     func touchDigit(_ digit: Int) {
+        
         if userIsInMiddleOfTyping {
             let textCurrenlyInDisplay = display.text!
             display.text = textCurrenlyInDisplay + "\(digit)"
@@ -74,19 +77,29 @@ class ViewController: UIViewController {
             display.text = "\(digit)"
         }
         userIsInMiddleOfTyping = true
+        
     }
     
-    func performOperation(_ digit: AnyObject) {
+    func performOperation(_ digit: Int) {
         
         if userIsInMiddleOfTyping {
             brain.setOperand(operand: displayValue)
             userIsInMiddleOfTyping = false
         }
-        //let mathematicalSymbol = digit
+        if let mathematicalSymbol = digit as Optional {
+            brain.performOperation(symbol: mathematicalSymbol)
+        }
+        displayValue = brain.result
         
         
     }
     
+    @IBAction func clearButtonPressed(_ sender: Any) {
+        brain.clear()
+        displayValue = brain.result
+        userIsInMiddleOfTyping = false
+        playSound()
+    }
 
 
 }

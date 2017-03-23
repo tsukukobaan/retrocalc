@@ -43,7 +43,7 @@
                                     <constraint firstAttribute="width" constant="330" id="Ryl-SD-jxp"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2500" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3T7-xx-jzm">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3T7-xx-jzm">
                                 <rect key="frame" x="42" y="66" width="320" height="39"/>
                                 <fontDescription key="fontDescription" name="MinecrafterAlt" family="Minecrafter Alt" pointSize="39"/>
                                 <nil key="textColor"/>
@@ -250,6 +250,21 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1S-w5-TJ7">
+                                <rect key="frame" x="157" y="686" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.91693776849999997" green="0.3544693102" blue="0.36214860580000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="hOn-h7-NFJ"/>
+                                    <constraint firstAttribute="height" constant="30" id="qvL-fJ-XdK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="17"/>
+                                <state key="normal" title="Clear">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FaQ-eh-HjR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -264,11 +279,13 @@
                             <constraint firstItem="k10-ko-M7q" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="12" id="TPO-Nq-6qd"/>
                             <constraint firstAttribute="trailing" secondItem="AnE-WI-B2b" secondAttribute="trailing" id="TxK-xf-1yA"/>
                             <constraint firstItem="AnE-WI-B2b" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="UYH-JI-qIp"/>
+                            <constraint firstItem="b1S-w5-TJ7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="V7h-fa-8ma"/>
                             <constraint firstItem="3T7-xx-jzm" firstAttribute="trailing" secondItem="k10-ko-M7q" secondAttribute="trailing" constant="-10" id="ZcY-fZ-TYX"/>
                             <constraint firstItem="AnE-WI-B2b" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="c9b-jI-x0X"/>
                             <constraint firstItem="3T7-xx-jzm" firstAttribute="top" secondItem="k10-ko-M7q" secondAttribute="bottom" constant="-79" id="cqb-yJ-DRP"/>
                             <constraint firstItem="d8k-yw-Dtv" firstAttribute="top" secondItem="k10-ko-M7q" secondAttribute="bottom" constant="-20" id="g75-fe-aWL"/>
                             <constraint firstItem="k10-ko-M7q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gLg-ND-XiX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="b1S-w5-TJ7" secondAttribute="bottom" constant="20" id="qGV-hs-ctd"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AnE-WI-B2b" secondAttribute="bottom" id="qIJ-VQ-HP5"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7wj-GP-HdL" secondAttribute="bottom" id="sJI-bw-j1f"/>
                             <constraint firstItem="sgg-et-KOG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xfT-66-Wev"/>
